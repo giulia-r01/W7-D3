@@ -24,7 +24,7 @@ const getBooksCards = function () {
                   <h5 class="card-title">${book.title}</h5>
                   <p class="card-text">Prezzo: €${book.price}</p>                  
                 </div>
-                <div class="text-center bg-dark py-2">
+                <div class="text-center bg-dark py-2 rounded-bottom">
                   <button class="btn btn-outline-success">Compra</button>
                   <button class="btn btn-outline-danger" onclick="removeCard(this)">Scarta</button>
                   </div>
