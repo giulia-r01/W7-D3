@@ -22,12 +22,12 @@ const getBooksCards = function () {
                 <img src="${book.img}" class="card-img-top" alt="${book.title}">
                 <div class="card-body bg-dark text-white">
                   <h5 class="card-title">${book.title}</h5>
-                  <p class="card-text">Prezzo: €${book.price}</p>
-                  <div>
+                  <p class="card-text">Prezzo: €${book.price}</p>                  
+                </div>
+                <div class="text-center bg-dark py-2">
                   <button class="btn btn-outline-success">Compra</button>
                   <button class="btn btn-outline-danger" onclick="removeCard(this)">Scarta</button>
                   </div>
-                </div>
               </div>
             `
 
@@ -42,7 +42,6 @@ const getBooksCards = function () {
     })
 }
 
-// Funzione per rimuovere una card dal DOM
 const removeCard = function (button) {
   button.closest(".col-6", ".col-md-4", ".col-lg-3", ".col-xl-3").remove()
 }
